@@ -1,9 +1,9 @@
 ##############################################
 # Stage 1 : Reference binary dependencies
 ##############################################
-FROM quay.io/redhat-user-workloads/ocp-tools-jenkins-tenant/adambkaplan-go-init-4-17@sha256:42be4b464de1194585f5ba14b292f2ecaf309a123c732a3870f1afce50db4e5c AS go-init
+FROM quay.io/redhat-user-workloads/ocp-tools-jenkins-tenant/adambkaplan-go-init-4-17@sha256:b282356fa3c874f4ccc214324bae064aac1a56ccfa486df7496c054a5638ae4e AS go-init
 
-FROM quay.io/redhat-user-workloads/ocp-tools-jenkins-tenant/jenkinsci-jenkins-4-17@sha256:95a2d0577cf954702a23c4ee8aef3ec9ad9ae1eed7a98a8f17cf063e3a95a9ae AS jenkins-war
+FROM quay.io/redhat-user-workloads/ocp-tools-jenkins-tenant/jenkinsci-jenkins-4-17@sha256:1bd4b0699165a83cd92b10d6a21b0c0750625f99a595dcb69ffa1ddeefc864b5 AS jenkins-war
 ##############################################
 # Stage 2 : Build Jenkins controller with Konflux-built binaries.
 ##############################################
